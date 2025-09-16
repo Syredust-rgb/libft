@@ -6,11 +6,11 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 16:42:57 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/16 16:44:24 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/16 16:50:31 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalplha(char c)
+int	ft_isalplha(int c)
 {
 	if ((c >= 48 && c <= 57))
 	{

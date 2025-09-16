@@ -6,13 +6,11 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 16:17:12 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/16 16:41:50 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/16 16:50:53 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-
-int	ft_isalplha(char c)
+int	ft_isalplha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 	{
@@ -23,7 +21,3 @@ int	ft_isalplha(char c)
 		return (0);
 	}
 }
-/* int main (void)
-{
-	printf("%d", ft_isalplha('4'));
-} */
