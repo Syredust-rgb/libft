@@ -9,4 +9,16 @@
 /*   Updated: 2025/09/16 17:17:38 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stddef.h>
 
+void	*ft_memset(void *s, int c, size_t n)
+{
+	unsigned char	*pointer;
+
+	pointer = (unsigned char *) s;
+	while (n--)
+	{
+		*pointer++ = (unsigned char) c;
+	}
+	return (s);
+}
