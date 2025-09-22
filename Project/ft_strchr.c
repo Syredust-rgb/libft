@@ -6,13 +6,13 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/22 09:12:53 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/22 09:23:27 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/22 09:59:08 by syredust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strchr(const char *str, int chr)
 {
-	int it;
+	int	it;
 
 	it = 0;
 	while (str[it] != '\0' && str[it] != chr)

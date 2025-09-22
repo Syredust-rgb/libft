@@ -6,10 +6,9 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/22 09:45:31 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/22 09:47:19 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/22 09:59:39 by syredust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 char	*ft_strrchr(const char *str, int chr)
 {
