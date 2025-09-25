@@ -6,16 +6,16 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 11:48:14 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/25 12:01:33 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/25 13:18:34 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include <stdlib.h>
 
-size_t	ft_strlen (const char *str)
+size_t	ft_strlen(const char *str)
 {
-	size_t it;
+	size_t	it;
 
 	it = 0;
 	while (str[it])
@@ -23,9 +23,9 @@ size_t	ft_strlen (const char *str)
 	return (it);
 }
 
-char	*ft_strcpy (char *dest, const char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
-	char *ptr;
+	char	*ptr;
 
 	ptr = dest;
 	while (*src)
@@ -38,10 +38,10 @@ char	*ft_strcpy (char *dest, const char *src)
 	return (dest);
 }
 
-char	*my_strdup (const char *s)
+char	*my_strdup(const char *s)
 {
-	size_t len;
-	char *copy;
+	size_t	len;
+	char	*copy;
 
 	if (s == NULL)
 		return (NULL);
