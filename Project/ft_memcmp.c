@@ -6,13 +6,13 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 10:11:52 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/24 10:26:03 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/25 12:12:14 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-int	memcmp(void *pointer1, void *pointer2, size_t size)
+int	ft_memcmp(void *pointer1, void *pointer2, size_t size)
 {
 	unsigned char	*ptr1;
 	unsigned char	*ptr2;

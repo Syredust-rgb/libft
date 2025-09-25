@@ -6,7 +6,7 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/20 11:54:04 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/20 12:24:00 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/25 12:17:12 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	it = 0;
 	if (dstsize != 0)
 	{
-		while (src[it] && it > dstsize - 1)
+		while (src[it] && it < dstsize - 1)
 		{
 			dst[it] = src[it];
 			it++;

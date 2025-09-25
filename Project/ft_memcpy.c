@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Syredust <Syredust@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/18 08:15:07 by Syredust          #+#    #+#             */
-/*   Updated: 2025/09/18 08:40:34 by Syredust         ###   ########.fr       */
+/*   Created: 2025/09/25 12:13:00 by aiturral          #+#    #+#             */
+/*   Updated: 2025/09/25 12:13:13 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+
 #include <stddef.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t count)
@@ -26,12 +26,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t count)
 	}
 	return (dest);
 }
-
-/* int	main (void)
-{
-	char *string_src = "patata";
-	char string_dest[8] = "aguacate";
-	printf ("%s\n", string_src);
-	ft_memcpy(string_dest, string_src, 6);
-	printf ("%s\n", string_dest);
-} */

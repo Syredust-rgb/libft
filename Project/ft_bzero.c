@@ -3,23 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Syredust <Syredust@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/17 20:04:17 by Syredust          #+#    #+#             */
-/*   Updated: 2025/09/18 08:45:40 by Syredust         ###   ########.fr       */
+/*   Created: 2025/09/25 11:42:40 by aiturral          #+#    #+#             */
+/*   Updated: 2025/09/25 11:46:20 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void	*ft_bezero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*pointer;
 
-	pointer = (unsigned char *) s;
+	pointer = (unsigned char *)s;
 	while (n--)
-	{
-		*pointer++ = (unsigned char) '\0';
-	}
-	return (s);
+		*pointer++ = 0;
 }
