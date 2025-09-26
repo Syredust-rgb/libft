@@ -6,10 +6,11 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 18:02:35 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/25 18:02:39 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/26 09:46:45 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_libft.h"
 #include <stdlib.h>
 #include <stddef.h>
 

@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_libft.h"
 #include <stdlib.h>
 
 char	*word_dup(const char *start, int len)

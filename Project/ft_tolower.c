@@ -6,11 +6,13 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/21 09:31:27 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/21 09:31:31 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/26 09:44:49 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_lower(int c)
+#include "ft_libft.h"
+
+int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
 		c += 32;

@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_libft.h"
 #include <stddef.h>
 #include <stdlib.h>
 
@@ -38,7 +39,7 @@ char	*ft_strcpy(char *dest, const char *src)
 	return (dest);
 }
 
-char	*my_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	size_t	len;
 	char	*copy;

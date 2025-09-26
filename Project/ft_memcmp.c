@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_libft.h"
 #include <stddef.h>
 
 int	ft_memcmp(void *pointer1, void *pointer2, size_t size)

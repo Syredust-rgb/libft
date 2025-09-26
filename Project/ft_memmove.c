@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_libft.h"
 #include <stddef.h>
 
 void	memmove_forward(unsigned char *d, const unsigned char *s, size_t n)

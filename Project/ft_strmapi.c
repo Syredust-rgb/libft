@@ -6,18 +6,19 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 09:03:24 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/26 09:13:53 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/26 09:46:27 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlb.h>
+#include "ft_libft.h"
+#include <stdlib.h>
 
 char	ft_f(unsigned int index, char c)
 {
 	if (index % 2 == 0)
 		return ((char)ft_toupper((unsigned char)c));
 	else
-		return ((char)tolower((unsigned char)c));
+		return ((char)ft_tolower((unsigned char)c));
 }
 
 char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
@@ -27,7 +28,7 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 
 	if (!s || !f)
 		return (NULL);
-	new_str = (char *) malloc(sizeof(char) * (strlen(s) + 1));
+	new_str = (char *) malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!new_str)
 		return (NULL);
 	it = 0;
