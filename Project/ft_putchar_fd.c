@@ -6,11 +6,11 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 10:05:27 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/26 10:08:03 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/26 10:24:39 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_libft.h>
+#include "ft_libft.h"
 #include <unistd.h>
 
 void	ft_putchar_fd(char c, int fd)
