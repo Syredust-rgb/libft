@@ -6,14 +6,16 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/21 09:07:59 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/21 09:18:26 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/27 11:42:02 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
+#include "libft.h"
 
 int	ft_toupper(int c)
 {
+	if (!c)
+		return (0);
 	if (c >= 97 && c <= 122)
 		c -= 32;
 	return (c);

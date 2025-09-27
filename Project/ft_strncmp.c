@@ -6,17 +6,18 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/23 10:59:30 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/25 12:21:43 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/27 11:38:32 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
-#include <stddef.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
 	size_t	it;
 
+	if (!str1 || !str2 || !n)
+		return (0);
 	it = 0;
 	while (it < n && str1[it] && str2[it] && str1[it] == str2[it])
 		it++;

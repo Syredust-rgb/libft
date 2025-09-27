@@ -6,15 +6,13 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 18:07:41 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/25 18:27:51 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/27 11:40:44 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
-#include <stdlib.h>
-#include <stddef.h>
+#include "libft.h"
 
-int	is_in_set(char c, const char *set)
+int static	is_in_set(char c, const char *set)
 {
 	while (*set)
 	{
@@ -25,7 +23,7 @@ int	is_in_set(char c, const char *set)
 	return (0);
 }
 
-char	*ft_strncpy(char *dest, const char *src, size_t n)
+char static	*ft_strncpy(char *dest, const char *src, size_t n)
 {
 	size_t	it;
 

@@ -6,21 +6,23 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 10:09:19 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/26 10:11:48 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/27 11:23:22 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "ft_libft.h"
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (s)
+	if (s && fd)
 	{
-		while (*s)
+		if (s)
 		{
-			write(fd, s, 1);
-			s++;
+			while (*s)
+			{
+				write(fd, s, 1);
+				s++;
+			}
 		}
 	}
 }

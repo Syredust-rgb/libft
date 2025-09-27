@@ -6,20 +6,11 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 09:03:24 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/26 09:46:27 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/27 11:37:32 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
-#include <stdlib.h>
-
-char	ft_f(unsigned int index, char c)
-{
-	if (index % 2 == 0)
-		return ((char)ft_toupper((unsigned char)c));
-	else
-		return ((char)ft_tolower((unsigned char)c));
-}
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 {
@@ -34,7 +25,7 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 	it = 0;
 	while (s[it])
 	{
-		new_str[it] = ft_f(it, s[it]);
+		new_str[it] = f(it, s[it]);
 		it++;
 	}
 	new_str[it] = '\0';

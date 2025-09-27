@@ -6,20 +6,17 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 16:58:25 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/16 16:59:48 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/27 11:13:29 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 126)
-	{
-		return (1);
-	}
-	else
-	{
+	if (!c)
 		return (0);
-	}
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }

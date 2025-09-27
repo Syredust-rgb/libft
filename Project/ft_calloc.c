@@ -6,14 +6,11 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 11:46:47 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/25 12:59:21 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/27 10:51:53 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
-#include <stdint.h>
-#include <stddef.h>
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t num, size_t size)
 {
@@ -21,6 +18,8 @@ void	*ft_calloc(size_t num, size_t size)
 	size_t			it;
 	unsigned char	*ptr;
 
+	if (!num || !size)
+		return (NULL);
 	if (size != 0 && num > SIZE_MAX / size)
 		return (NULL);
 	total_size = num * size;

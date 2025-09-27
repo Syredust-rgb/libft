@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 18:32:06 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/25 19:08:42 by marvin           ###   ########.fr       */
+/*   Updated: 2025/09/27 11:02:09 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
-#include <stdlib.h>
+#include "libft.h"
 
-char	*word_dup(const char *start, int len)
+char static	*word_dup(const char *start, int len)
 {
 	int		it;
 	char	*word;
@@ -31,7 +30,7 @@ char	*word_dup(const char *start, int len)
 	return (word);
 }
 
-int	process_word(char **result, int it, const char **s, char c)
+int static	process_word(char **result, int it, const char **s, char c)
 {
 	const char	*start;
 	int			len;
@@ -54,7 +53,7 @@ int	process_word(char **result, int it, const char **s, char c)
 	return (1);
 }
 
-int	fill_words(char **result, const char *s, char c)
+int static	fill_words(char **result, const char *s, char c)
 {
 	int	it;
 
@@ -74,7 +73,7 @@ int	fill_words(char **result, const char *s, char c)
 	return (1);
 }
 
-int	count_words(const char *s, char c)
+int static	count_words(const char *s, char c)
 {
 	int	count;
 	int	in_word;
@@ -100,7 +99,7 @@ char	**ft_split(char const *s, char c)
 	char	**result;
 	int		words;
 
-	if (!s)
+	if (!s || !c)
 		return (NULL);
 	words = count_words(s, c);
 	result = (char **)malloc(sizeof(char *) * (words + 1));

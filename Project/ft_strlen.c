@@ -6,17 +6,18 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 17:00:22 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/16 17:16:49 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/27 11:35:38 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
-#include <stddef.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
 	int	it;
 
+	if (!s)
+		return (0);
 	it = 0;
 	while (s[it] != '\0')
 	{

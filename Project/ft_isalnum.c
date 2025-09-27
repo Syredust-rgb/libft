@@ -6,20 +6,17 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 16:45:00 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/25 13:19:27 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/27 11:13:05 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 48 && c <= 57))
-	{
-		return (1);
-	}
-	else
-	{
+	if (!c)
 		return (0);
-	}
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 48 && c <= 57))
+		return (1);
+	return (0);
 }

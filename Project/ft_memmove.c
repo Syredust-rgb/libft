@@ -6,34 +6,33 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 12:13:45 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/25 13:21:12 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/27 10:57:49 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
-#include <stddef.h>
+#include "libft.h"
 
-void	memmove_forward(unsigned char *d, const unsigned char *s, size_t n)
+void static	memmove_forward(unsigned char *d, const unsigned char *s, size_t n)
 {
-	size_t	i;
+	size_t	it;
 
-	i = 0;
-	while (i < n)
+	it = 0;
+	while (it < n)
 	{
-		d[i] = s[i];
-		i++;
+		d[it] = s[it];
+		it++;
 	}
 }
 
-void	memmove_backward(unsigned char *d, const unsigned char *s, size_t n)
+void static	memmove_backward(unsigned char *d, const unsigned char *s, size_t n)
 {
-	size_t	i;
+	size_t	it;
 
-	i = n;
-	while (i > 0)
+	it = n;
+	while (it > 0)
 	{
-		d[i - 1] = s[i - 1];
-		i--;
+		d[it - 1] = s[it - 1];
+		it--;
 	}
 }
 
@@ -42,6 +41,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char	*d;
 	unsigned char	*s;
 
+	if (!dest || !src || !n)
+		return (NULL);
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
 	if (d == s || n == 0)

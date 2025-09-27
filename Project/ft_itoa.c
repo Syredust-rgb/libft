@@ -6,14 +6,13 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 08:28:10 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/26 08:45:45 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/27 10:56:00 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
-#include <stdlib.h>
+#include "libft.h"
 
-int	ft_num_len(int n)
+int static	ft_num_len(int n)
 {
 	int	len;
 
@@ -28,7 +27,7 @@ int	ft_num_len(int n)
 	return (len);
 }
 
-void	ft_handle_negative(long *nbr, char *str)
+void static	ft_handle_negative(long *nbr, char *str)
 {
 	if (*nbr < 0)
 	{
@@ -37,7 +36,7 @@ void	ft_handle_negative(long *nbr, char *str)
 	}
 }
 
-void	ft_convert_number(long nbr, char *str, int len)
+void static	ft_convert_number(long nbr, char *str, int len)
 {
 	if (nbr == 0)
 		str[0] = '0';
@@ -54,6 +53,8 @@ char	*ft_itoa(int n)
 	long	nbr;
 	int		len;
 
+	if (!n)
+		return (NULL);
 	nbr = n;
 	len = ft_num_len(n);
 	str = (char *)malloc(sizeof(char) * (len + 1));

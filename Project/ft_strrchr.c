@@ -6,27 +6,28 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/22 09:45:31 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/25 13:22:41 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/27 11:40:23 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *str, int chr)
 {
-	int		i;
+	int		it;
 	char	*last;
 
-	i = 0;
+	if (!str || !chr)
+		return (NULL);
+	it = 0;
 	last = NULL;
-	while (str[i] != '\0')
+	while (str[it] != '\0')
 	{
-		if (str[i] == (char)chr)
-			last = (char *)&str[i];
-		i++;
+		if (str[it] == (char)chr)
+			last = (char *)&str[it];
+		it++;
 	}
 	if ((char)chr == '\0')
-		return ((char *)&str[i]);
+		return ((char *)&str[it]);
 	return (last);
 }
