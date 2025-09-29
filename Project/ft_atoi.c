@@ -24,8 +24,6 @@ int	ft_atoi(const char *str)
 	int	result;
 	int	sign;
 
-	if (!str)
-		return (0);
 	result = 0;
 	sign = 1;
 	while (*str && ft_is_space(*str))
