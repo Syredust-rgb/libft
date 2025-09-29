@@ -6,13 +6,13 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 18:07:41 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/27 11:40:44 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/29 17:40:04 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int static	is_in_set(char c, const char *set)
+static int	is_in_set(char c, const char *set)
 {
 	while (*set)
 	{
@@ -23,7 +23,7 @@ int static	is_in_set(char c, const char *set)
 	return (0);
 }
 
-char static	*ft_strncpy(char *dest, const char *src, size_t n)
+static char	*ft_strncpy(char *dest, const char *src, size_t n)
 {
 	size_t	it;
 

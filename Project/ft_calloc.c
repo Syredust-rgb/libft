@@ -18,8 +18,6 @@ void	*ft_calloc(size_t num, size_t size)
 	size_t			it;
 	unsigned char	*ptr;
 
-	if (!num || !size)
-		return (NULL);
 	if (size != 0 && num > SIZE_MAX / size)
 		return (NULL);
 	total_size = num * size;

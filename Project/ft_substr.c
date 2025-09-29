@@ -6,7 +6,7 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 16:15:23 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/27 11:41:19 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/29 17:48:52 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	str_len;
 	size_t	it;
 
-	if (!s || !start || !len)
+	if (!s)
 		return (NULL);
 	str_len = ft_strlen(s);
 	if (start >= str_len)

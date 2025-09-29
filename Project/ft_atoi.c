@@ -6,13 +6,13 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 17:02:34 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/27 11:12:22 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/29 17:33:48 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	static	ft_is_space(char c)
+static int	ft_is_space(char c)
 {
 	return (c == ' ' || c == '\t'
 		|| c == '\n' || c == '\v'

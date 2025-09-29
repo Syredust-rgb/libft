@@ -6,13 +6,13 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 16:16:37 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/27 11:42:34 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/29 17:39:35 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t static	ft_compare(const char *haystack, const char *needle,
+static size_t	ft_compare(const char *haystack, const char *needle,
 		size_t check, size_t len)
 {
 	size_t	check_it;
@@ -29,8 +29,6 @@ size_t static	ft_compare(const char *haystack, const char *needle,
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t	check_it;
-	size_t	check;
 	size_t	it;
 	size_t	needle_len;
 
@@ -42,11 +40,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	it = 0;
 	while (haystack[it] && len > it)
 	{
-		if (haystack[it] == needle[0])
+		if (haystack[it] == needle[0] && len - it >= needle_len)
 		{
-			check = it;
-			check_it = ft_compare(haystack, needle, check, len);
-			if (check_it == needle_len)
+			if (ft_compare(haystack, needle, it, len) == needle_len)
 				return ((char *)&haystack[it]);
 		}
 		it++;

@@ -6,7 +6,7 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 17:00:22 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/27 11:35:38 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/29 17:22:50 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *s)
 {
-	int	it;
+	size_t	it;
 
 	if (!s)
 		return (0);

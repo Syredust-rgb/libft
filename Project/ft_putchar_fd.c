@@ -6,7 +6,7 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 10:05:27 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/27 11:23:22 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:45:04 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if (c && fd)
-		write(fd, &c, 1);
+	write(fd, &c, 1);
 }

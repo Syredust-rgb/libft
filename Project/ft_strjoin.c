@@ -6,13 +6,13 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 18:02:35 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/27 11:27:10 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/29 17:38:28 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char static	*join_strings(size_t s1_len, size_t s2_len,
+static char	*join_strings(size_t s1_len, size_t s2_len,
 	char const *s1, char const*s2)
 {
 	size_t	it;
@@ -44,8 +44,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	s1_len;
 	size_t	s2_len;
 
-	if (!s1 || !s2)
-		return (NULL);
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
 	strjoin = join_strings(s1_len, s2_len, s1, s2);

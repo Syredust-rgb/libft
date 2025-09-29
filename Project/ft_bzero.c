@@ -16,7 +16,7 @@ void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*pointer;
 
-	if (s && n)
+	if (s)
 	{
 		pointer = (unsigned char *)s;
 		while (n--)

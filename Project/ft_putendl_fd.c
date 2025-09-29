@@ -6,7 +6,7 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 10:15:02 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/27 11:23:22 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:45:50 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,10 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (s && fd)
+	while (*s)
 	{
-		while (*s)
-		{
-			write(fd, s, 1);
-			s++;
-		}
-		write(fd, "\n", 1);
+		write(fd, s, 1);
+		s++;
 	}
+	write(fd, "\n", 1);
 }

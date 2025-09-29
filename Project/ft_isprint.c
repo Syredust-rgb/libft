@@ -6,7 +6,7 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 16:58:25 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/27 11:13:29 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:30:11 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 int	ft_isprint(int c)
 {
-	if (!c)
-		return (0);
 	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);

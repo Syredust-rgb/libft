@@ -6,7 +6,7 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 10:09:19 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/27 11:23:22 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:55:05 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (s && fd)
-	{
-		if (s)
-		{
-			while (*s)
-			{
-				write(fd, s, 1);
-				s++;
-			}
-		}
-	}
+	size_t	strlen;
+
+	strlen = ft_strlen(s);
+	write(fd, s, strlen);
 }

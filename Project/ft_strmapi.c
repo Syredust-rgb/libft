@@ -6,7 +6,7 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 09:03:24 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/27 11:37:32 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/29 17:23:59 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 	char			*new_str;
 	unsigned int	it;
 
-	if (!s || !f)
+	if (!s)
 		return (NULL);
 	new_str = (char *) malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!new_str)

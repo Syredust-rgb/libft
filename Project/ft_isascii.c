@@ -6,7 +6,7 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 16:47:46 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/27 11:13:24 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:29:49 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 int	ft_isascii(int c)
 {
-	if (!c)
-		return (0);
 	if (c >= 0 && c <= 127)
 		return (1);
 	return (0);

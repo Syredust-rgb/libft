@@ -6,7 +6,7 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/22 09:45:31 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/27 11:40:23 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/29 17:43:04 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strrchr(const char *str, int chr)
 	int		it;
 	char	*last;
 
-	if (!str || !chr)
+	if (!str)
 		return (NULL);
 	it = 0;
 	last = NULL;
