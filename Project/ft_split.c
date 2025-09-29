@@ -105,10 +105,5 @@ char	**ft_split(char const *s, char c)
 	result = (char **)malloc(sizeof(char *) * (words + 1));
 	if (!result)
 		return (NULL);
-	if (!fill_words(result, s, c))
-	{
-		free(result);
-		return (NULL);
-	}
 	return (result);
 }
