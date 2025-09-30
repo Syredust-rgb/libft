@@ -56,10 +56,10 @@ bonus: $(NAME) $(OBJ_BONUS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ) $(NAME)
+	rm -f $(OBJ)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(OBJ) $(NAME)
 
 re: fclean all
 

@@ -6,7 +6,7 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 18:32:06 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/29 17:43:47 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/30 18:33:18 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,5 +105,9 @@ char	**ft_split(char const *s, char c)
 	result = (char **)malloc(sizeof(char *) * (words + 1));
 	if (!result)
 		return (NULL);
+	if (!fill_words(result, s, c))
+	{
+		return (NULL);
+	}
 	return (result);
 }

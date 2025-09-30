@@ -6,13 +6,13 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 16:42:57 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/29 16:29:59 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/30 18:43:51 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_digit(int c)
+int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
 		return (1);

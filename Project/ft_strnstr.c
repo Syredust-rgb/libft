@@ -6,7 +6,7 @@
 /*   By: aiturral <aiturral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 16:16:37 by aiturral          #+#    #+#             */
-/*   Updated: 2025/09/29 17:39:35 by aiturral         ###   ########.fr       */
+/*   Updated: 2025/09/30 19:02:44 by aiturral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	it;
 	size_t	needle_len;
 
-	if (!haystack || !needle || !len)
-		return (NULL);
 	needle_len = ft_strlen (needle);
 	if (needle_len == 0)
 		return ((char *)haystack);
