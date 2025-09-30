@@ -35,6 +35,10 @@ SRC     := ft_atoi.c \
            ft_tolower.c \
            ft_toupper.c
 OBJ     := $(SRC:.c=.o)
+# ========= BONUS =========
+SRC_BONUS	:= 
+OBJ_BONUS	:= $(SRC_BONUS:.c=.o)
+# =========================
 CC      := cc
 CFLAGS  := -Wall -Wextra -Werror
 AR      := ar rcs
@@ -45,6 +49,8 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(AR) $(NAME) $(OBJ)
+bonus: $(NAME) $(OBJ_BONUS)
+	$(AR) $(NAME) $(OBJ_BONUS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
