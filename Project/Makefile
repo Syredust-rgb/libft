@@ -36,7 +36,15 @@ SRC     := ft_atoi.c \
            ft_toupper.c
 OBJ     := $(SRC:.c=.o)
 # ========= BONUS =========
-SRC_BONUS	:= 
+SRC_BONUS	:=  ft_lstadd_back_bonus.c \
+                ft_lstadd_front_bonus.c \
+                ft_lstclear_bonus.c \
+                ft_lstdelone_bonus.c \
+                ft_lstiter_bonus.c \
+                ft_lstlast_bonus.c \
+                ft_lstmap_bonus.c \
+                ft_lstnew_bonus.c \
+                ft_lstsize_bonus.c
 OBJ_BONUS	:= $(SRC_BONUS:.c=.o)
 # =========================
 CC      := cc
@@ -49,18 +57,18 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(AR) $(NAME) $(OBJ)
-bonus: $(NAME) $(OBJ_BONUS)
+bonus: $(OBJ_BONUS)
 	$(AR) $(NAME) $(OBJ_BONUS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(OBJ_BONUS)
 
 fclean: clean
-	rm -f $(OBJ) $(NAME)
+	rm -f $(OBJ) $(OBJ_BONUS) $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
